@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Đăng nhập hệ thống</title>
+    <meta charset="utf-8" />
+    <link href="../Content/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../Content/bootstrap-theme.min.css" rel="stylesheet"/>
+    <link href="../css/MyStyle.css" rel="stylesheet" />
+</head>
+<body >
+<div class="panel panel-primary" style="background-color: #4682b4">
+    <a href="../Home page/Trang chủ.html" style="font-size: 40px; font-weight: bold; color: white; margin-left: 50px;">BÓNG ĐÁ TK13.1</a>
+</div>
+
+<div class="container"style="font-family:'Times New Roman', Times, serif;font-size: 18px;margin-top: 40px;">
+    <div class="row">
+        <div class="col-lg-6 col-lg-offset-3">
+            <div class="panel panel-primary ">
+
+                <div class="panel-heading" style="text-align: center; font-weight: bold; font-size: 20px;">
+                    ĐĂNG NHẬP
+                </div>
+                <br/>
+
+                <div class="panel-body">
+                    <form action="GiaoDienAdminChinh.html" class="form-horizontal" id="dangnhap">
+                        <!--Hàng 1-->
+                        <div class="form-group">
+                            <div class="col-lg-3 control-label" style="font-weight: bold;">
+                                Tài khoản
+                            </div>
+                            <div class="col-lg-8">
+                                <input type="text" id="txttaikhoan" class="form-control" placeholder="Email hoặc Số điện thoại"/>
+                            </div><br/>
+                            <br />
+                        </div>
+                        <label id="taikhoan" style="margin-left: 140px; color: red;"></label>
+                        <!--Hàng 2-->
+                        <div class="form-group">
+                            <div class="col-lg-3 control-label" style="font-weight: bold;">
+                                Mật khẩu
+                            </div>
+                            <div class="col-lg-8">
+                                <input type="password" id="pass" class="form-control" placeholder="Mật khẩu"/>
+                            </div>
+                        </div>
+                        <label id="matkhau" style="margin-left: 140px; color: red;"></label>
+                        <div class="panel-footer" style="text-align: center">
+                            <button class="btn btn-danger" type="submit">Đăng nhập</button> <br/> <br/>
+                            <button class="btn btn-default btn-sm">Khôi phục tài khoản của bạn</button> <br/>
+                            <a href="TaoTaiKhoan.html">Tạo tài khoản mới</a>
+                        </div>
+                    </form>
+                    
+                   </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../Scripts/jquery-1.10.2.min.js"></script>
+<script src="../Scripts/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#dangnhap").submit(function(e) {
+            var tendangnhap = $("#txttaikhoan").val(); 
+            var matkhau = $("#pass").val();
+            $("#taikhoan").html("");
+            if (tendangnhap == "") {
+                $("#taikhoan").html("Tên đăng nhập không được để trống!");
+                e.preventDefault();
+            } else {
+                if (!isNaN(tendangnhap.charAt(0))) {
+                    $("#taikhoan").html("Tên đăng nhập không được bắt đầu bằng số!");
+                    e.preventDefault();
+                } else {
+                    if (tendangnhap.length > 20 || tendangnhap.length < 3) {
+                        $("#taikhoan").html("Tên tài khoản phải > 3 ký tự và < 20 ký tự!");
+                        e.preventDefault();
+                    } else {
+                        if (matkhau == "") {
+                            $("#matkhau").html("Mật khẩu không được để trống!");
+                            e.preventDefault();
+                        } else {
+                            if (!(tendangnhap == "tung" && matkhau == "1" || tendangnhap == "thuong" && matkhau == "1")) {
+                                $("#matkhau").html("Tài khoản hoặc mật khẩu không đúng!");
+                                e.preventDefault();
+                            } else {
+                                $("#matkhau").html("Bạn đã đăng nhập thành công!");
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>

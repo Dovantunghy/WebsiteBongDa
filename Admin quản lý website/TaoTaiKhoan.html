@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Tạo tài khoản</title>
+    <meta charset="utf-8"/>
+    <link href="../Content/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../Content/bootstrap-theme.min.css" rel="stylesheet"/>
+    <link href="../css/MyStyle.css" rel="stylesheet"/>
+</head>
+<body>
+
+<div class="panel panel-primary" style="background-color: #4682b4">
+    <a href="../Home page/Trang chủ.html" style="font-size: 40px; font-weight: bold; color: white; margin-left: 50px;">BÓNG ĐÁ TK13.1</a>
+</div>
+
+<div class="container" style="font-family:'Times New Roman', Times, serif;margin-top: 40px;font-size:15px;">
+    <div class="row">
+        <div class="col-sm-6 col-lg-offset-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading" style="text-align: center; font-weight: bold; font-size: 30px;">
+                    ĐĂNG KÝ
+                </div>
+                <div class="panel-body">
+                    <form action="DangNhap.html" class="form-horizontal" id="dangky">
+                        <div class="form-group">
+                            <div class="col-sm-3 control-label">
+                                <label>Tên Tài khoản</label>
+                            </div>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="txtTenTK" placeholder="Tùng Đỗ"/>
+                            </div>
+                        </div>
+
+                        <!--Hàng đầu tiên-->
+                        <div class="form-group">
+                            <div class="col-sm-3 control-label">
+                                <label>Họ Đệm</label>
+                            </div>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="firstName" placeholder="Đỗ Văn"/>
+                            </div>
+                        </div>
+
+                        <!--Hàng 2-->
+                        <div class="form-group">
+                            <div class="col-sm-3 control-label">
+                                <label>Tên</label>
+                            </div>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="txtten" placeholder="Tùng"/>
+                            </div>
+                        </div>
+
+                        <!--Hàng 3-->
+                        <div class="form-group">
+                            <div class="col-sm-3 control-label">
+                                <label>Mật khẩu</label>
+                            </div>
+                            <div class="col-sm-9">
+                                <input type="password" class="form-control" id="txtpass" placeholder="*******"/>
+                            </div>
+                        </div>
+
+                        <!--Hàng 4-->
+                        <div class="form-group">
+                            <div class="col-sm-3 control-label">
+                                <label>Nhập lại</label>
+                            </div>
+                            <div class="col-sm-9">
+                                <input type="password" class="form-control" id="txtpass2" placeholder="*******"/>
+                            </div>
+                        </div>
+
+                        <!--Hàng 5-->
+                        <div class="form-group">
+                            <div class="col-sm-3 control-label">
+                                <label>Email</label>
+                            </div>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="txtemail" placeholder="dovantunghy186@gmail.com"/>
+                            </div>
+                        </div>
+
+                        <!--Hàng 6-->
+                        <div class="form-group">
+                            <div class="col-sm-3 control-label">
+                                <label>Giới tính</label>
+                            </div>
+                            <div class="col-sm-9 ">
+                                <select class="form-control" id="gioitinh">
+                                    <option>Nam</option>
+                                    <option>Nữ</option>
+                                    <option>Khác</option>
+                                </select>
+                            </div>
+                        </div>
+                        <br/>
+                        <label id="thongbao" style="margin-left: 140px; color: red;"></label>
+                        <div class="panel-footer" style="text-align: center">
+                            <button class="btn btn-success" type="submit">
+                                <i class="glyphicon glyphicon-plus"></i>
+                                Đăng ký
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="../Scripts/jquery-1.10.2.min.js"></script>
+<script src="../Scripts/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#dangky").submit(function(e) {
+
+            var tentaikhoan = $("#txtTenTK").val();
+            var hodem = $("#lastName").val();
+            var ten = $("#txtten").val();
+            var matkhau = $("#txtpass").val();
+            var matkhau2 = $("#txtpass2").val();
+            var email = $("#txtemail").val();
+            $("#thongbao").html("");
+            if (tentaikhoan == "") {
+                $("#thongbao").html("Không được để trống Tên tài khoản!");
+                e.preventDefault();
+            } else {
+                if (hodem == "") {
+                    $("#thongbao").html("Không được để trống Họ đệm!");
+                    e.preventDefault();
+                } else {
+                    if (ten == "") {
+                        $("#thongbao").html("Không được để trống Tên!");
+                        e.preventDefault();
+                    } else {
+                        if (matkhau == "") {
+                            $("#thongbao").html("Không được để trống Mật khẩu!");
+                            e.preventDefault();
+                        } else {
+                            if (matkhau2 == "") {
+                                $("#thongbao").html("Không được để trống Nhập lại mật khẩu!");
+                                e.preventDefault();
+                            } else {
+                                if (matkhau != matkhau2) {
+                                    $("#thongbao").html("Mật khẩu không khớp");
+                                    e.preventDefault();
+                                } else {
+                                    if (email == "") {
+                                        $("#thongbao").html("Không được để trống Email!");
+                                        e.preventDefault();
+                                    } else {
+                                        if (email == "") {
+                                            $("#thongbao").html("Không được để trống Email!");
+                                            e.preventDefault();
+                                        } else {
+                                            $("#thongbao").html("Đăng ký thành công!");
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>
+
+
+
+
+

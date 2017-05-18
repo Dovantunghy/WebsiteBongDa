@@ -1,0 +1,201 @@
+﻿
+
+.khungbao{
+    width:1350px;
+    min-width:80%;
+    height:auto;
+    margin:auto;
+    border:1px solid #808080;
+  margin-top:0px;
+  height:auto;
+}
+header{
+    
+    width:100%;
+    background-color:#333333;
+    padding-top:0px;
+    
+}
+header nav ul{
+            padding:0px;
+            margin:0px;
+            list-style:none;
+        }
+header nav ul li{
+            display:inline-block;/*hien thi ngang doc*/
+            padding-top:5px;
+            padding-bottom:5px;
+            width:150px;
+            /*margin-left:-4px;*/
+            
+            /*text-align:center;*/
+        }
+header nav ul li:hover ul{
+            visibility:visible;/*hien thi khi di chuot vao*/
+            background-color:#525252;
+            
+            
+            
+        }
+header nav ul li:hover{
+            
+            background-color:#525252;
+        }
+header nav ul li ul{
+            visibility:hidden;/*an cac menu con*/
+            z-index:200;
+            position:absolute;/*vi tri tuyet doi theo menu cha*/
+            max-width:150px;
+            /*padding-left:4px;*/
+            
+        }
+header nav ul li ul a{
+    font-size:12px;
+    
+}
+
+header a{
+    color:#e6e6e6;
+    font-size:14px;
+   padding:8px;
+   text-decoration:none;
+   
+}
+header a:hover{
+    color:#3591d3;
+}
+section{
+    background-color:white;
+    height:auto;
+    width:100%;
+}
+section img{
+    padding-left:4px;
+    padding-top:8px;
+    
+}
+.TTAdmin{
+    padding-left:8px;
+    padding-top:8px;
+    
+}
+.TTAdmin a:hover{
+    color:#3591d3;
+}
+.divP60Admin a{
+    color:#e6e6e6;
+    font-size:8px;
+}
+/*footer{
+    background-color:#171717;
+    min-height:100px;
+}*/
+.divT20{
+    width:15%;
+    min-height:500px;
+    float:left;
+    background-color:#333333;
+    /*background-color:aquamarine;*/
+}
+.divP80{
+    width:85%;
+    min-height:500px;
+    float:right;
+    background-color:#eeeeee;
+}
+.divcao150{
+    background-color:#333333;
+    height:120px;
+    
+    }
+.divcao300{
+    background-color:#333333;
+    min-height:300px;
+}
+/*.divcao300:nth-child(2n+1){
+    background-color:#171717;
+    min-height:300px;
+}*/
+.divT40Admin{
+    background-color:#525252;
+    width:40%;
+    height:100%;
+    float:left;
+}
+.divP60Admin{
+    background-color:#525252;
+    width:60%;
+    height:100%;
+    float:right;
+    color:#e6e6e6;
+    font-size:12px;
+    text-decoration:none;
+}
+    .divP60Admin .TTAdmin a{
+        font-size:10px;
+    }
+.divcao300 nav ul{
+    
+    padding-left:0px;
+}
+.divcao300 nav ul li{
+    /*color:white;*/
+    margin-top:4px;
+    line-height:30px;
+    font-size:15px;
+    list-style:none;
+    padding-left:0px;
+    text-decoration:none;
+    padding-left:8px;
+    
+}
+.divcao300 nav ul li a{
+    color:#e6e6e6;
+    text-decoration:none;
+}
+.divcao300 nav ul li:hover{
+    
+    background-color:#171717;
+    
+}
+.divcao300 nav ul li a:hover{
+    color:#3591d3;
+    /*background-size:auto;
+    background-color:#171717;*/
+}
+.divcao300 nav ul li ul{
+    visibility:hidden;
+    width:200px;
+    z-index:100;
+    position:absolute;
+    margin-left:190px;
+    margin-top:-33px;
+   }
+.divcao300 nav ul li ul li{
+    font-size:12px;
+    
+}
+.divcao300 nav ul li:hover ul{
+    visibility:visible;
+    background-color:#535353;
+    color:#e6e6e6;
+}
+.noidung{
+    margin:auto;
+    width:90%;
+    border:4px dashed #c1c1c1;
+}
+input[type=file] {
+    margin:auto;
+    border-radius:4px;
+    margin-top:7em;
+    margin-bottom:5em;
+    border:2px solid #c1c1c1;
+}
+input[type=file]:hover{
+    background-color:#c1c1c1;
+}
+h3{
+    padding-left:5%;
+}
+

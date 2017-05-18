@@ -1,0 +1,291 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Giao diện chính-Quản lý trang Web</title>
+    <meta charset="utf-8" />
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="../css/AdminDSHinhAnh.css" rel="stylesheet" />
+    <script src="../Scripts/bootstrap.min.js"></script>
+</head>
+<body>
+    <div id="header">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div style="background-color:#4682b4; padding: 3px;">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menuchinh">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="GiaoDienAdminChinh.html" class="navbar-brand" style="font-weight: bold; color: white; font-size:30px;font-family:'Times New Roman', Times, serif;font-size:30px;">Admin Bóng đá TK13.1</a>
+                    </div> <!--Logo trang web-->
+
+                    <div class="navbar-collapse collapse" id="menuchinh" style="font-family:'Times New Roman', Times, serif;font-size:18px;">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#" style="color: white"><span class="glyphicon glyphicon-envelope" style="width: 15px;">10</span></a></li>
+                            <li><a href="#" style="color: white"><span class="glyphicon glyphicon-bell" style="width: 15px;">10</span></a></li>
+                            <li><a href="#" style="color: white"><span class="glyphicon glyphicon-flag" style="width: 40px;">10</span></a></li>
+                            <li style="width: 50px;">
+                                <a href="#" style="color: white">
+                                    <img src="../img/tao.PNG" style="width: 40px; height: 40px; border-radius: 100px; padding: 0px;" />
+                                </a>
+                            </li>
+                            <li><a href="GiaoDienAdminChinh.html" style="color: white;"><label>Thuong Nguyen </label></a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-cog" style="color: white"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="AdminSuaThongTinAdmin.html">Sửa thông tin</a></li>
+                                    <li><a href="DangNhap.html">Đăng xuất</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div> <!--Menu-->
+                </div>
+            </div>
+        </nav>
+    </div> <!--Header-->
+    <div style="margin-top: 70px;">
+        <div style="background-color: #ffffff">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="table table-responsive">
+                        <table class="table table-hover style" style="background-color: #dcdcdc;">
+                            <tr>
+                                <td align="center">
+                                    <a>
+                                        <img src="../img/tao.PNG" style="width: 100px; height: 100px; border-radius: 100px; padding: 0px;" />
+                                    </a>
+                                </td>
+                                <td>
+                                    <div style="font-weight: bold;font-family:'Times New Roman', Times, serif;font-size: 18px">
+                                        <label style="color: black;font-size: 20px;">Thuong Nguyen</label> <br />
+                                        <span class="glyphicon glyphicon-ok-circle" style="color: green">Online</span> <br /><br />
+                                        <a href="AdminSuaThongTinAdmin.html">Chỉnh sửa thông tin</a>
+                                    </div>
+                                </td>
+                            </tr> <!--ảnh đại diện-->
+                            <tr>
+                                <td colspan="2">
+                                    <div class="dropdown">
+                                        <button class="btn btn-success dropdown-toggle form-control" type="button" data-toggle="dropdown">
+                                            <a href="#"><label class="glyphicon glyphicon-pushpin" style="font-weight: bold; font-size: 18px; margin-left: -30px;color: white"> Bài viết</label></a>
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu ">
+                                            <li><a href="AdminDSBaiViet.html">Danh sách</a></li>
+                                            <li><a href="AdminThemBaiViet.html">Thêm mới</a></li>
+                                        </ul>
+                                    </div>
+
+                                </td>
+                            </tr> <!--bài viết-->
+                            <tr>
+                                <td colspan="2">
+                                    <div class="dropdown">
+                                        <button class="btn btn-success dropdown-toggle form-control" type="button" data-toggle="dropdown">
+                                            <a href="#"><label class="glyphicon glyphicon-picture" style="font-weight: bold; font-size: 18px; margin-left: -22px;color: white"> Hình ảnh</label></a>
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="AdminDSHinhAnh.html">Danh sách</a></li>
+                                            <li><a href="AdminThemImages.html">Thêm mới</a></li>
+                                        </ul>
+                                    </div>
+
+                                </td>
+                            </tr> <!--hình ảnh-->
+                            <tr>
+                                <td colspan="2">
+                                    <div class="dropdown">
+                                        <button class="btn btn-success dropdown-toggle form-control" type="button" data-toggle="dropdown">
+                                            <a href="#"><label class="glyphicon glyphicon-facetime-video" style="font-weight: bold; font-size: 18px; margin-left: -65px;color: white"> Video</label></a>
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="AdminDSVideo.html">Danh sách</a></li>
+                                            <li><a href="AdminThemVideo.html">Thêm mới</a></li>
+                                        </ul>
+                                    </div>
+
+                                </td>
+                            </tr> <!--Video-->
+                            <tr>
+                                <td colspan="2">
+                                    <div class="dropdown">
+                                        <button class="btn btn-success dropdown-toggle form-control" type="button" data-toggle="dropdown">
+                                            <a href="#"><label class="glyphicon glyphicon-list-alt" style="font-weight: bold; font-size: 18px; margin-left: -65px;color: white"> Trang</label></a>
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="AdminDSPage.html">Danh sách</a></li>
+                                            <li><a href="AdminThemPage.html">Thêm mới</a></li>
+                                        </ul>
+                                    </div>
+
+                                </td>
+                            </tr> <!--Trang-->
+                            <tr>
+                                <td colspan="2">
+                                    <div class="dropdown">
+                                        <button class="btn btn-success dropdown-toggle form-control" type="button" data-toggle="dropdown">
+                                            <a href="#"><label class="glyphicon glyphicon-envelope" style="font-weight: bold; font-size: 18px; margin-left: -35px;color: white"> Hộp thư</label></a>
+                                            <span class="caret"></span>
+                                        </button>
+
+                                    </div>
+
+                                </td>
+                            </tr> <!--hộp thư-->
+                            <tr>
+                                <td colspan="2">
+                                    <div class="dropdown">
+                                        <button class="btn btn-success dropdown-toggle form-control" type="button" data-toggle="dropdown">
+                                            <a href="#"><label class="glyphicon glyphicon-user" style="font-weight: bold; font-size: 18px; margin-left: -10px;color: white"> Người dùng</label></a>
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="AdminDSAdmin.html">Danh sách</a></li>
+                                            <li><a href="AdminThemNguoiDung.html">Thêm mới</a></li>
+                                        </ul>
+                                    </div>
+
+                                </td>
+                            </tr> <!--người dùng-->
+                            <tr>
+                                <td colspan="2">
+                                    <div class="dropdown">
+                                        <button class="btn btn-success dropdown-toggle form-control" type="button" data-toggle="dropdown">
+                                            <a href="#"><label class="glyphicon glyphicon-wrench" style="font-weight: bold; font-size: 18px; margin-left: -45px;color: white"> Cài đặt</label></a>
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="AdminCaiDatChung.html">Cài đặt chung</a></li>
+                                        </ul>
+                                    </div>
+
+                                </td>
+                            </tr> <!--cài đặt-->
+                            <tr>
+                                <td colspan="2">
+                                    <a href="DangNhap.html" class="btn btn-success form-control"><label style="font-weight: bold; font-size: 18px; margin-left: -30px;color: white"> Đăng xuất</label></a>
+                                </td>
+                            </tr> <!--đăng nhập-->
+                        </table>
+                    </div>
+                </div> <!--Menu trái-->
+                <div class="col-lg-9">
+                <div class="divP100" style="font-family:'Times New Roman', Times, serif;font-size: 20px">
+                    <div class="nd">
+                        <table>
+                            <tr>
+                                <td>
+                                    <h3 style="vertical-align:middle;">Danh sách hình ảnh </h3>
+                                </td>
+                                <td>
+                                    <a href="AdminThemImages.html"><label>Upload</label></a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="noidung">
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="../img/07.PNG" />
+                                    <label><a href="AdminSuaHinhAnh.html">Sửa</a></label><br />
+                                    <label><a href="#">Xóa</a></label>
+                                </td>
+                                <td>
+                                    <img src="../img/08.PNG" />
+                                    <label><a href="AdminSuaHinhAnh.html">Sửa</a></label><br />
+                                    <label><a href="#">Xóa</a></label>
+                                </td>
+                                <td>
+
+                                    <img src="../img/09.PNG" />
+                                    <label><a href="AdminSuaHinhAnh.html">Sửa</a></label><br />
+                                    <label><a href="#">Xóa</a></label>
+                                </td>
+                                <td>
+                                    <img src="../img/010.PNG" />
+                                    <label><a href="AdminSuaHinhAnh.html">Sửa</a></label><br />
+                                    <label><a href="#">Xóa</a></label>
+                                </td>
+                                <td>
+                                    <img src="../img/01.PNG" />
+                                    <label><a href="AdminSuaHinhAnh.html">Sửa</a></label><br />
+                                    <label><a href="#">Xóa</a></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="../img/02.PNG" />
+                                    <label><a href="AdminSuaHinhAnh.html">Sửa</a></label><br />
+                                    <label><a href="#">Xóa</a></label>
+                                </td>
+                                <td>
+                                    <img src="../img/03.PNG" />
+                                    <label><a href="AdminSuaHinhAnh.html">Sửa</a></label><br />
+                                    <label><a href="#">Xóa</a></label>
+                                </td>
+                                <td>
+                                    <img src="../img/04.PNG" />
+                                    <label><a href="AdminSuaHinhAnh.html">Sửa</a></label><br />
+                                    <label><a href="#">Xóa</a></label>
+                                </td>
+                                <td>
+                                    <img src="../img/05.PNG" />
+                                    <label><a href="AdminSuaHinhAnh.html">Sửa</a></label><br />
+                                    <label><a href="#">Xóa</a></label>
+                                </td>
+                                <td>
+                                    <img src="../img/06.PNG" />
+                                    <label><a href="AdminSuaHinhAnh.html">Sửa</a></label><br />
+                                    <label><a href="#">Xóa</a></label>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div> 
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row panel panel-footer">
+
+        <div class="container">
+            <div class="col-sm-6">
+
+                <a>Thông tin Toà soạn</a>
+                <br />
+
+                Tổng Biên tập:
+                <b>Đỗ Văn Tùng</b>
+                <br />
+                Phó tổng Biên tập:
+                <b>Nguyễn Thị Thương</b>
+
+            </div>
+            <div class="col-lg-6">
+
+                <a>Địa chỉ liên hệ</a>
+                <p>Xã Tân Lập - Huyện Yên Mỹ - Tỉnh Hưng Yên</p>
+
+                <p>ĐT: 0973654074</p>
+                <p>
+                    Email:
+                    <a href="mailto:dovantunghy186@gmail.com" rel="nofollow">dovantunghy186@gmail.com</a> Facebook: Tùng Anh<a href="#"></a>
+                </p>
+                <p>
+                    <marquee>Liên hệ Quảng cáo:0973654074</marquee>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
